@@ -9,9 +9,15 @@ h1{
     ;
 }
 
-.media-picture {;background-image: url(https://sm.ign.com/t/ign_es/news/e/endgame-is/endgame-is-the-final-avengers-movie-says-marvel-boss_ru2r.1200.jpg);    background-size: cover;
+.media-picture {
+    background-image: url(https://sm.ign.com/t/ign_es/news/e/endgame-is/endgame-is-the-final-avengers-movie-says-marvel-boss_ru2r.1200.jpg);  
+      background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
     height: 400px;
+    
+    
 
 }
 .review-score {background-color: #e6bd09;color: white;padding: 12px;}

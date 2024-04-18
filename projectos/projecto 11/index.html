@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br"  >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+
+    <script src="./script/main.js" defer type="module"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <main class="flex">
+
+<section id="timer">
+
+<div class="flex" id="editTimer">
+
+    <span id="minutes" data-action="set">00</span>
+    <span>:</span>
+    <span id="seconds" data-action="set">00</span>
+
+
+</div>
+
+<div id="controls" class="flex">
+
+
+    <button 
+    
+    data-action="toggleRuning"
+
+    class="ph ph-play-circle">
+        
+    </button>
+    <button
+   
+    data-action="toggleRuning"
+     class="ph ph-pause-circle">
+        
+    </button>
+   
+    <button
+    data-action="reset"
+     class="ph ph-stop-circle secondary">
+       
+    </button>
+    <button
+    data-action="morTime"
+    class="ph-bold ph-plus">
+        
+    </button>
+    <button
+    data-action="minusTime"
+     class="ph-bold ph-minus">
+       
+    </button>
+
+
+
+</div>
+
+
+</section>
+
+
+<section id="sons" >
+    
+    <div >
+        <button   class="tree" ><img data-music='tree'   src="./img/img sons/tree.svg" alt=""></button>
+        <button  class="tessPress"><img data-music='tessPress' src="./img/img sons/treePress.svg" alt=""></button>
+    </div>
+   
+
+    <div>
+
+        <button  class="cloud"><img data-music='cloud' src="./img/img sons/cloud.svg" alt=""></button>
+        <button  class="cloudPress"><img data-music='cloudPress' src="./img/img sons/cloudPress.svg" alt=""></button>
+
+    </div>
+
+    <div>
+
+        <button  class="coffe"><img data-music='coffe' src="./img/img sons/coffe.svg" alt=""></button>
+    <button class="coffePress"><img data-music='coffePress' src="./img/img sons/coffePress.svg" alt=""></button>
+    </div>
+
+    <div>
+        <button  class="fire"><img data-music='fire' src="./img/img sons/fireplace.svg" alt=""></button>
+        <button class="fireplacePress"><img data-music='fireplacePress' src="./img/img sons/fireplacePress.svg" alt=""></button>
+    </div>
+    
+    
+</section>
+
+
+    </main>
+    
+</body>
+</html>
