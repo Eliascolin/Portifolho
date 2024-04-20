@@ -1,89 +1,160 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-text-decoration: none;
-list-style: none;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 
 
- :root{
-   font-size: 62.5%;
-   font-family: "IBM Plex Sans", sans-serif;
-   --bs-btn-bg: #0d6efd;
-   --bs-white: #fff;
-  
-    
-} 
+:root {
+    font-size: 62.5%;
+    font-family: "IBM Plex Sans", sans-serif;
+    --bs-btn-bg: #0d6efd;
+    --bs-white: #fff;
 
-
-header{
-
-width: 100%;
-height: 12rem;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 4em;
 
 }
 
-header ul{
+
+header {
+
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4em;
+
+}
+
+.linkHeader {
+
+    display: flex;
+
+
+}
+
+@media (max-width: 500px) {
+
+    header {
+
+        flex-direction: column-reverse;
+        height: auto;
+
+
+    }
+
+
+    header .linkHeader {
+
+        width: 25em;
+
+    }
+
+}
+
+.none {
+
+    display: none;
+
+}
+
+header ul {
 
     display: flex;
     gap: 3rem;
     font-size: 3em;
     align-items: center;
-    
+
 
 }
 
 
 
-header img{
+header img {
 
     max-width: 100%;
     width: 16rem;
-   
+
 
 }
+
+@media (max-width: 600px) {
+
+
+
+    header li:nth-child(3) {
+
+        display: none;
+    }
+
+    header .none {
+
+        display: flex;
+
+    }
+
+}
+
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    width: 100%;
+    min-height: 70vh; 
+    align-items: center;
+}
+
+@media (max-width:700px){
 
 
 main{
-    display: flex;
-    justify-content: space-between;
-    padding: 7rem;
-    width: 100%;
-    height: 70vh;
-    align-items: center;
 
-    
-    }
-
-
-
-
-
-.section-container{
-
-
-
-display: flex;
 flex-direction: column;
-gap: 1em;
+text-align: center;
+gap: 1rem;
+
 
 
 }
 
-.section-container h1{
+main .foto_perfil{
 
-font-size: 6em;
-font-weight: 700;
-font-style: normal;
+
+margin-right: 0;
+
+
 }
 
-.section-container p{
+}
+
+
+
+
+
+
+.section-container {
+
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+
+}
+
+.section-container h1 {
+
+    font-size: 6em;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.section-container p {
 
 
     font-size: 1.5em;
@@ -94,160 +165,174 @@ font-style: normal;
 
 }
 
-.section-container span{
+.section-container span {
     font-size: 1em;
-color: rgb(20, 20, 85);
+    color: rgb(20, 20, 85);
 }
 
 
-.section-container button{
-
+.section-container button {
     background-color: var(--bs-btn-bg);
-    width: 30em;
-    height: 3em;
-    border-radius: 150px;
+    width: 80%; 
+    max-width: 30rem; 
+    height: 3rem;
+    border-radius: 1.5rem; 
     border: none;
- 
-    
-    padding: 1rem;
+    padding: 0.5rem 1rem; 
     cursor: pointer;
-    
 }
 
-button a{
+@media (max-width:400px){
+
+    main button{
+    
+    width: 1%;
+    
+    }
+    
+    }
+
+button a {
     color: var(--bs-white);
     font-size: 1.5em;
 
 }
 
-.flags-container{
+.flags-container {
 
 
     text-align: center;
+
+}
+
+.flags-container img {
+
+    width: 7rem;
+    height: 5rem;
     
-}
 
-.flags-container img{
-
-width: 7rem;
-height:5rem;
-margin-left: 1rem;
-
-}
-
-.image-container img{
-
-width: 60%;
-
+    
 
 }
 
 
-#Projects{
+
+
+main .foto_perfil {
+
+    width: 28%;
+ 
+
+
+}
+
+
+#Projects {
     width: 100%;
     height: 100vh;
     padding: 7rem;
     display: grid;
-      grid-template-columns: repeat(3, 1fr); 
-      gap: 4rem;
-    
-    }
-    
-    
-    
-    .element {
-        border: 1px solid black; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 35rem;
-       
-      }
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
 
-    
-
-      .element figure{
-
-position: relative;
-
-height: 100%;
-width: 100%;
-background-color: #0d6efd;
-overflow: hidden;
-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.459);
-cursor: pointer;
-
-      }
-      .element a{
-
-width: 100%;
-height: 100%;
-
-
-      }
-
-
-    
-
-      .element figure img{
-
-        width: 100%;
-        height: 100%;
-        transition: all 500ms ease-in-out;
-        
-        
-              }
-
-
-              .element figure .capa{
-
-position: absolute;
-background-color: rgba(0, 0, 0, 0.6);
-top: 0;
-width: 100%;
-height: 100%;
-visibility: hidden;
-opacity: 0;
-transition: all 500ms ease-in-out;
-text-align: center;
-color: var(--bs-white);
-padding: 1em;
-
-        
-              }
-
-
-              .element figure:hover > .capa {
-
-opacity: 1;
-visibility: visible;
-
-              }
-
-
-             
-              .element figure .capa h3{
-
-                margin-bottom: 9em;
-                margin-top: em;
-                transition: all 500ms ease-in-out;
-                font-size: 3em;
-                font-weight: bold;
-                                      } 
-
-            .element figure .capa p{
-                font-size: 1.6em;
-                text-overflow: ellipsis;
-font-weight: bold;
-
-overflow: hidden;
-            }                      
+}
 
 
 
-                      .element figure:hover > .capa h3{
+.element {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
 
-                         margin-top: 1.5rem;
-                         margin-bottom: 3px;
+}
 
-                      }
+
+
+.element figure {
+
+    position: relative;
+
+    height: 100%;
+    width: 100%;
+    background-color: #0d6efd;
+    overflow: hidden;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.459);
+    cursor: pointer;
+
+}
+
+.element a {
+
+    width: 100%;
+    height: 100%;
+
+
+}
+
+
+
+
+.element figure img {
+
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-in-out;
+
+
+}
+
+
+.element figure .capa {
+
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+    text-align: center;
+    color: var(--bs-white);
+    padding: 1em;
+
+
+}
+
+
+.element figure:hover>.capa {
+
+    opacity: 1;
+    visibility: visible;
+
+}
+
+
+
+.element figure .capa h3 {
+
+    margin-bottom: 9em;
+    margin-top: em;
+    transition: all 500ms ease-in-out;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.element figure .capa p {
+    font-size: 1.6em;
+    text-overflow: ellipsis;
+    font-weight: bold;
+
+    overflow: hidden;
+}
+
+
+
+.element figure:hover>.capa h3 {
+
+    margin-top: 1.5rem;
+    margin-bottom: 3px;
+
+}
