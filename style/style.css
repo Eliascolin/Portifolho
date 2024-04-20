@@ -13,6 +13,8 @@
     font-family: "IBM Plex Sans", sans-serif;
     --bs-btn-bg: #0d6efd;
     --bs-white: #fff;
+    --foot-color:#feb602;
+    --foot-boder-imagem:#002c4f;
 
 
 }
@@ -229,11 +231,11 @@ main .foto_perfil {
 
 #Projects {
     width: 100%;
-    height: 100vh;
     padding: 7rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
+   
   
     
 
@@ -382,3 +384,4 @@ padding: 3rem;
     margin-bottom: 3px;
 
 }
+
